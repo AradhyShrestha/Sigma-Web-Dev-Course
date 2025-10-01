@@ -98,10 +98,10 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/chat"
+                href="/about"
                 className="block px-3 py-2 rounded-lg hover:bg-gray-700/50 hover:text-purple-400 transition"
               >
-                UserChat
+                About
               </Link>
             </li>
             <li className="flex justify-end">

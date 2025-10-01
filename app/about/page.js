@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -87,12 +88,12 @@ export default function About() {
         <p className="text-lg text-gray-700 mb-8">
           Be part of the fastest growing chat platform today. Start your journey with us.
         </p>
-        <a
+        <Link
           href="/forums"
           className="px-10 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl text-lg font-semibold shadow-lg hover:opacity-90 transition"
         >
           Start Chatting
-        </a>
+        </Link>
       </section>
     </div>
   );

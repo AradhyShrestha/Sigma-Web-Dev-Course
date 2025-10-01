@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,18 +18,18 @@ export default function Home() {
             JustChat makes conversations simple, fast, and fun.
           </p>
           <div className="flex flex-wrap gap-4 sm:gap-6 justify-center md:justify-start mt-4">
-            <a
+            <Link
               href="/forums"
               className="px-6 sm:px-8 py-3 sm:py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-xl shadow-xl transition text-base sm:text-lg font-semibold"
             >
               Explore Forums
-            </a>
-            <a
-              href="#"
-              className="px-6 sm:px-8 py-3 sm:py-4 bg-pink-600 hover:bg-pink-700 text-white rounded-xl shadow-xl transition text-base sm:text-lg font-semibold"
+            </Link>
+            <Link
+              href="/about"
+              className="px-6 sm:px-8 py-3 sm:py-4 bg-white hover:bg-gray-200 text-black rounded-xl shadow-xl transition text-base sm:text-lg font-semibold"
             >
-              Start Chatting
-            </a>
+              Learn More
+            </Link>
           </div>
         </div>
 
