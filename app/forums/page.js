@@ -1,6 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
-import { Button } from '@/components/ui/button';
+import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const topics = [
@@ -36,24 +35,26 @@ const topics = [
   }
 ];
 
-const page = () => {
+const Page = () => {
   return (
     <div className="container mx-auto my-20 text-black">
       <h1 className="text-3xl my-8 font-bold text-center">Discuss Forums</h1>
       <div className='flex flex-wrap justify-center'>
-        {topics.map((topic) => {
-          return <div key={topic.img} className='shadow-xl bg-slate-100 w-full md:w-1/4 m-4 flex flex-col items-center py-5 justify-center rounded-xl'>
-            <Image width={54} height={54} src={topic.img} alt='not found' />
+        {topics.map((topic) => (
+          <div key={topic.img} className='shadow-xl bg-slate-100 w-full md:w-1/4 m-4 flex flex-col items-center py-5 justify-center rounded-xl'>
+            <Image width={54} height={54} src={topic.img} alt={topic.text} />
             <h2 className='text-2xl font-bold my-2'>{topic.text}</h2>
             <p className="my-2 mx-5 text-lg flex items-center justify-center font-semibold">{topic.desc}</p>
             <Link href={`/forum/${topic.slug}`}>
-              <Button className='bg-blue-500 font-bold text-white py-2 px-4 my-3 rounded-lg hover:bg-blue-400'>Discuss Now</Button>
+              <button className='bg-blue-500 font-bold text-white py-2 px-4 my-3 rounded-lg hover:bg-blue-400 inline-block text-center'>
+                Discuss Now
+              </button>
             </Link>
           </div>
-        })}
+        ))}
       </div>
     </div>
   )
 }
 
-export default page
+export default Page;

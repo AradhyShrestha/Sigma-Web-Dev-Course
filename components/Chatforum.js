@@ -42,7 +42,7 @@ const ChatForum = ({ Clerkuser, slug }) => {
         setChannel(channel);
         // channel.addMembers([userId])
 
-    }, [client]);
+    }, [client, slug, userId]); // ✅ added missing dependencies
 
     if (!client) return <div>Setting up client & connection...</div>;
 

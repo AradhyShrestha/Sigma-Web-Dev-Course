@@ -9,7 +9,7 @@ export default function About() {
           About JustChat 💬
         </h1>
         <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-          JustChat is more than just a messaging app. It's a platform designed
+          JustChat is more than just a messaging app. It&apos;s a platform designed
           to connect people globally, build communities, and enable secure,
           real-time conversations — fast, fun, and simple.
         </p>
@@ -21,7 +21,7 @@ export default function About() {
           <h2 className="text-4xl font-bold mb-6 text-purple-600">Our Mission</h2>
           <p className="text-gray-700 text-lg leading-relaxed">
             Our mission is to make global communication accessible, fast, and
-            enjoyable for everyone. Whether you're chatting with friends,
+            enjoyable for everyone. Whether you&apos;re chatting with friends,
             joining communities, or building teams — JustChat makes it easy.
           </p>
         </div>
@@ -47,10 +47,7 @@ export default function About() {
             { title: "🌍 Community", desc: "Building global communities without barriers." },
             { title: "🎨 Simplicity", desc: "Clean, user-friendly design for everyone." },
           ].map((item, idx) => (
-            <div
-              key={idx}
-              className="p-8 bg-white rounded-2xl border shadow-lg hover:scale-105 transition-transform"
-            >
+            <div key={idx} className="p-8 bg-white rounded-2xl border shadow-lg hover:scale-105 transition-transform">
               <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
               <p className="text-gray-700">{item.desc}</p>
             </div>
